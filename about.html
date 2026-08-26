@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>About David Keefe | Financial Planner &amp; Elder Care Planning Advisor | Waltham</title>
+<meta name="description" content="About David Keefe, founder of 4-Point Financial, LLC in Waltham, MA: 32 years with New York Life, ChFC and CLU designations, and elder care planning leadership."/>
+<link rel="canonical" href="https://davidkeefe.netlify.app/about.html"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/style.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(function(){
+  const _sb=supabase.createClient('https://aowblircaymwuymcmllh.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvd2JsaXJjYXltd3V5bWNtbGxoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIzMzExMjcsImV4cCI6MjA2NzkwNzEyN30.qS7jxVwu83zEYMvxNo7C_2dtVrSZ6wYIFiNtoN69UkQ');
+  const _cid='David Keefe';
+  async function loadSBLinks(){
+    const[{data:soc},{data:news}]=await Promise.all([
+      _sb.from('social_media').select('*').eq('client_id',_cid),
+      _sb.from('news_links').select('*').eq('client_id',_cid)
+    ]);
+    const render=(ids,data)=>ids.forEach(id=>{
+      const el=document.getElementById(id);
+      if(!el||!data)return;
+      el.innerHTML='';
+      data.forEach(l=>{
+        const a=document.createElement('a');
+        a.href=l.url;a.target='_blank';a.rel='noopener noreferrer';a.title=l.name;
+        a.innerHTML='<img src="'+l.icon+'" alt="'+l.name+'" style="width:30px;height:30px;border-radius:4px"/>';
+        el.appendChild(a);
+      });
+    });
+    render(['sml-soc-about'],soc);
+    render(['sml-news-about'],news);
+  }
+  document.addEventListener('DOMContentLoaded',loadSBLinks);
+})();
+</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "David Keefe",
+  "jobTitle": "Financial Planner",
+  "url": "https://davidkeefe.netlify.app/",
+  "image": "https://davidkeefe.netlify.app/images/hero.jpg",
+  "description": "David Keefe is a financial planner and founder of 4-Point Financial, LLC in Waltham, Massachusetts, with 32 years of experience at New York Life and the ChFC and CLU designations.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Waltham",
+    "addressRegion": "MA",
+    "addressCountry": "US"
+  },
+  "sameAs": [
+    "https://www.4-pointfinancial.com/",
+    "https://www.facebook.com/david.keefeiii?fref=ts",
+    "https://www.instagram.com/davidfrancis449/",
+    "https://x.com/dfkeefe",
+    "https://www.tiktok.com/@davidkeefe01",
+    "https://www.pinterest.com/DavidKeefe01/",
+    "https://www.quora.com/profile/DavidKeefe01",
+    "https://www.reddit.com/user/DavidKeefe01/",
+    "https://github.com/DavidKeefe01",
+    "https://www.behance.net/DavidKeefe01",
+    "https://dribbble.com/DavidKeefe01",
+    "https://vimeo.com/davidkeefe01",
+    "https://www.f6s.com/davidkeefe01"
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "David Keefe | 4-Point Financial, LLC",
+  "url": "https://davidkeefe.netlify.app/"
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About David Keefe",
+  "url": "https://davidkeefe.netlify.app/about.html",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "David Keefe",
+    "url": "https://davidkeefe.netlify.app/"
+  }
+}</script>
+</head>
+<body>
+
+<!-- ══ NAV ═══════════════════════════════════════════════════════ -->
+<nav id="main-nav">
+  <a class="nav-logo" href="/">David<span> Keefe</span></a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a class="active" href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ══ PAGE HERO ═════════════════════════════════════════════════ -->
+<div class="pg-hero">
+  <p class="eyebrow" style="color:rgba(255,255,255,.55)">Learn More</p>
+  <h1>David Keefe</h1>
+  <p class="pg-sub">Thirty-two years with New York Life, a practice built in Waltham, and a career devoted to elder care planning and community leadership across Greater Boston.</p>
+</div>
+
+<!-- ══ PROFILE CARD ══════════════════════════════════════════════ -->
+<div class="pc-wrap">
+  <div class="pc">
+    <div class="pc-ph"><img src="images/hero.jpg" alt="David Keefe"/></div>
+    <div>
+      <div class="pc-nm">David Keefe</div>
+      <div class="pc-rl">Financial Planner &amp; Elder Care Planning Advisor</div>
+      <div class="pc-lc">Waltham, Massachusetts</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ABOUT SECTIONS + SIDEBAR ══════════════════════════════════ -->
+<div class="am-wrap">
+  <div class="am-inner">
+    <div>
+
+      <div class="csec">
+        <p class="cey">Professional Background</p>
+        <h2>Three Decades With New York Life</h2>
+        <p>David Keefe has spent 32 years as a financial professional with New York Life, a tenure that places him among the top 100 of approximately 12,000 agents nationwide. That standing reflects sustained production at the highest tier of the profession, recognized through his MDRT Top of the Table designation.</p>
+        <p>Keefe holds the <a href="chfc-clu-designations-financial-planning.html">Chartered Financial Consultant and Chartered Life Underwriter designations</a> from The American College of Financial Services. He is registered under FINRA Series 6 and Series 63, and licensed as a Life and Health Advisor in Massachusetts and more than 20 additional states.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Practice Leadership</p>
+        <h2>Founder of 4-Point Financial, LLC</h2>
+        <p>As owner and principal of <a href="https://www.4-pointfinancial.com/" target="_blank" rel="noopener">4-Point Financial's website</a> and its Waltham, Massachusetts practice, Keefe leads a team of two full-time and two part-time employees serving individuals, families, and business owners throughout Greater Boston.</p>
+        <p>David has also mentored financial advisors for more than 20 years, coaching a small group of selected advisors each year, work that has shaped how he approaches both new advisors and long-term clients.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Subject-Matter Leadership</p>
+        <h2>Elder Care and Long-Term Care Planning</h2>
+        <p>Long-term care remains one of the most underaddressed areas of personal financial planning, and David Keefe has built part of his practice specifically around it. He serves as a faculty member and past speaker for Massachusetts Continuing Legal Education (MCLE) programs on elder care financial planning topics.</p>
+        <p>Keefe has also taught long-term care planning through Newton Adult Community Education, extending <a href="elder-care-financial-planning-resource.html">his work on elder care financial planning</a> directly to the adult children of aging parents, a high-intent and often underserved audience.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Community Involvement</p>
+        <h2>Roots in Watertown, Newton, and Waltham</h2>
+        <p>David Keefe's community ties run deep in Watertown, where he grew up, and extend across Newton and the Charles River area. He is the former President of the Watertown Chamber of Commerce and a current member of the Charles River Chamber of Commerce. He is active on <a href="https://www.facebook.com/david.keefeiii?fref=ts" target="_blank" rel="noopener">his Facebook page</a> and shares occasional updates through <a href="https://www.reddit.com/user/DavidKeefe01/" target="_blank" rel="noopener">his Reddit account</a>.</p>
+        <p>Keefe leads <a href="usa-500-clubs-waltham-leadership.html">the Waltham club of USA 500 Clubs</a>, a member-based organization for senior-level trusted advisors founded in 2013 by Joe Chatham and headquartered in Wellesley, Massachusetts. He is also completing a three-year term on the Board of Directors of the Boston Estate Planning Council, and previously served as Head Coach for Newton Youth Hockey.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Charitable Work & Civic Identity</p>
+        <h2>Pan-Mass Challenge and Community Giving</h2>
+        <p>David Keefe has ridden in the Pan-Mass Challenge more than 10 times, raising over $40,000 for the Jimmy Fund and Dana-Farber Cancer Institute, a sustained commitment that reflects the same long-term orientation he brings to client relationships.</p>
+        <p>He has spoken at the AMC Annual Summit on charitable giving strategies and continues to support the Catholic Schools Foundation's scholarship fundraising efforts. He also posts periodic updates through <a href="https://www.instagram.com/davidfrancis449/" target="_blank" rel="noopener">his Instagram account</a>.</p>
+      </div>
+
+    </div>
+
+    <aside class="sidebar-facts">
+      <div class="sb-box">
+        <div class="sb-title">Quick Facts</div>
+        <div class="fr"><span class="fl">Firm</span><span class="fv">David Keefe, 4-Point Financial, LLC</span></div>
+        <div class="fr"><span class="fl">Years with New York Life</span><span class="fv">32+</span></div>
+        <div class="fr"><span class="fl">National Ranking</span><span class="fv">Top 100 of ~12,000 agents</span></div>
+        <div class="fr"><span class="fl">Designations</span><span class="fv">ChFC, CLU</span></div>
+        <div class="fr"><span class="fl">Recognition</span><span class="fv">MDRT Top of the Table</span></div>
+        <div class="fr"><span class="fl">Licensed In</span><span class="fv">Massachusetts + 20 states</span></div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- ══ SOCIAL + PRESS ACCORDION ══════════════════════════════════ -->
+<div class="acc-section" style="background:var(--off)">
+  <div class="acc-wrap">
+    <button class="acc-btn" onclick="tog(this,'s-about')">Follow David Keefe on Social Media <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="s-about"><div id="sml-soc-about" class="social-media-list"></div></div>
+    <button class="acc-btn" onclick="tog(this,'n-about')">David Keefe in the Press <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="n-about"><div id="sml-news-about" class="social-media-list"></div></div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 David Keefe. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script>
+function tog(btn,id){
+  const c=document.getElementById(id),open=c.classList.contains('open');
+  document.querySelectorAll('.acc-body').forEach(e=>e.classList.remove('open'));
+  document.querySelectorAll('.acc-btn').forEach(e=>e.classList.remove('open'));
+  if(!open){c.classList.add('open');btn.classList.add('open');}
+}
+</script>
+</body>
+</html>
